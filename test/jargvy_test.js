@@ -62,7 +62,7 @@ exports['extract'] = {
     this.rules = [
       {'id': '-p', 'name': 'path', 'default': '.'},
       {'id': '-r', 'name': 'intThing', 'default': 6},
-      {'id': '--help', 'name': 'help', 'default': false},
+      {'id': '--help', 'name': 'help'},
     ];
     Jargvy.define(this.rules);
 
@@ -71,7 +71,8 @@ exports['extract'] = {
         'fake_app',
         'fake search text',
         '-p', './dir', 
-        '--help'];
+        '--help',
+        '-halp'];
     this.options = Jargvy.extract(fakeArgvs);
 
     done();
@@ -87,7 +88,15 @@ exports['extract'] = {
   'undefined option': function(test) {
     test.expect(1);
 
-    test.equal(undefined, this.options['help']);
+    test.equal(undefined, this.options['halp']);
+
+    test.done();
+  },
+  'true flag parse': function(test) {
+    test.expect(1);
+
+    console.log(JSON.stringify(this.options));
+    test.equal(true, this.options['help']);
 
     test.done();
   },
