@@ -1,23 +1,23 @@
 {
   "name": "jargvy",
   "description": "Command line args parser",
-  "version": "0.1.0",
-  "homepage": "https://github.com/mustafa/jargvy",
+  "version": "0.1.1",
+  "homepage": "https://github.com/mustafar/jargvy",
   "author": {
     "name": "Mustafa Rizvi",
     "url": "mustafarizvi.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mustafa/jargvy.git"
+    "url": "git://github.com/mustafar/jargvy.git"
   },
   "bugs": {
-    "url": "https://github.com/mustafa/jargvy/issues"
+    "url": "https://github.com/mustafar/jargvy/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/mustafa/jargvy/blob/master/LICENSE-MIT"
+      "url": "https://github.com/mustafar/jargvy/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/jargvy",
@@ -34,9 +34,9 @@
     "grunt": "~0.4.2"
   },
   "keywords": [
-    'command line arguments',
-    'command line',
-    'arguments',
-    'argv'
+    "command line arguments",
+    "command line",
+    "arguments",
+    "argv"
   ]
 }

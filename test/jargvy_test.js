@@ -95,7 +95,6 @@ exports['extract'] = {
   'true flag parse': function(test) {
     test.expect(1);
 
-    console.log(JSON.stringify(this.options));
     test.equal(true, this.options['help']);
 
     test.done();
