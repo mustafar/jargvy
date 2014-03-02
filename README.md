@@ -16,11 +16,14 @@ var jargvy = require('jargvy');
   'default' is the default value
   'type' which can be one of ['number', 'string', 'boolean]
     lets you define a type without specifying a default
+  --flag creates a bool flag that needs no default/type.
+    It defaults to true when detected
 */
 var rules = [
   {'id': '-str', 'name': 'str', 'default': '.' },
   {'id': '-num', 'name': 'num', 'default': 5 },
   {'id': '-bool', 'name': 'bool', 'default': true },
+  {'id': '--help', 'name': 'help'},
 ];
 jargvy.define(rules);
 
