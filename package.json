@@ -1,7 +1,7 @@
 {
   "name": "jargvy",
   "description": "Command line args parser",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/mustafar/jargvy",
   "author": {
     "name": "Mustafa Rizvi",
