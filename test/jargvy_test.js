@@ -70,7 +70,7 @@ exports['extract'] = {
         'fake_path',
         'fake_app',
         'fake search text',
-        '-p', './dir', 
+        '-p', './dir',
         '--help',
         '-halp'];
     this.options = Jargvy.extract(fakeArgvs);
@@ -99,4 +99,4 @@ exports['extract'] = {
 
     test.done();
   },
-}
+};
